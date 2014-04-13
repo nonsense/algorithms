@@ -4,7 +4,7 @@ logo:             logo.png
 disqus_shortname: algorithms87
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+url:              http://algorithms.powpark.com
 
 # Owner/author information
 owner:
