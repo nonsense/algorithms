@@ -5,30 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>SRM 612 &#8211; Algorithms</title>
+<title>SRM 617 &#8211; Algorithms</title>
 <meta name="description" content="">
-<meta name="keywords" content="graph, bfs">
+<meta name="keywords" content="">
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://algorithms.powpark.com/images/logo.png">
-<meta name="twitter:title" content="SRM 612">
+<meta name="twitter:title" content="SRM 617">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@nonsens3">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SRM 612">
+<meta property="og:title" content="SRM 617">
 <meta property="og:description" content="">
-<meta property="og:url" content="http://algorithms.powpark.com/articles/srm-612/">
+<meta property="og:url" content="http://algorithms.powpark.com/articles/srm-617/">
 <meta property="og:site_name" content="Algorithms">
 
 
 
 
 
-<link rel="canonical" href="http://algorithms.powpark.com/articles/srm-612/">
+<link rel="canonical" href="http://algorithms.powpark.com/articles/srm-617/">
 <link href="http://algorithms.powpark.com/feed.xml" type="application/atom+xml" rel="alternate" title="Algorithms Feed">
 
 
@@ -115,88 +115,68 @@
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <span class="entry-tags"><a href="http://algorithms.powpark.com/tags/#graph" title="Pages tagged graph">graph</a>&nbsp;&bull;&nbsp;<a href="http://algorithms.powpark.com/tags/#bfs" title="Pages tagged bfs">bfs</a></span>
+        <span class="entry-tags"></span>
         
-          <h1 class="entry-title">SRM 612</h1>
+          <h1 class="entry-title">SRM 617</h1>
         
       </header>
       <footer class="entry-meta">
         <img src="http://algorithms.powpark.com/images/tony.jpeg" alt="Anton Evangelatov photo" class="author-photo">
         <span class="author vcard">By <span class="fn"><a href="http://algorithms.powpark.com/about/" title="About Anton Evangelatov">Anton Evangelatov</a></span></span>
-        <span class="entry-date date published"><time datetime="2014-04-16T00:00:00+02:00"><i class="icon-calendar-empty"></i> April 16, 2014</time></span>
+        <span class="entry-date date published"><time datetime="2014-04-23T00:00:00+02:00"><i class="icon-calendar-empty"></i> April 23, 2014</time></span>
         
         <span class="entry-comments"><i class="icon-comment-alt"></i> <a href="#disqus_thread">Comment</a></span>
-        <span><a href="http://algorithms.powpark.com/articles/srm-612/" rel="bookmark" title="SRM 612"><i class="icon-link"></i> Permalink</a></span>
+        <span><a href="http://algorithms.powpark.com/articles/srm-617/" rel="bookmark" title="SRM 617"><i class="icon-link"></i> Permalink</a></span>
         
         <span class="social-share-facebook">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http://algorithms.powpark.com/articles/srm-612/" title="Share on Facebook" itemprop="Facebook"><i class="icon-facebook-sign"></i> Like</a></span>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://algorithms.powpark.com/articles/srm-617/" title="Share on Facebook" itemprop="Facebook"><i class="icon-facebook-sign"></i> Like</a></span>
         <span class="social-share-twitter">
-            <a href="https://twitter.com/intent/tweet?hashtags=articles&text=SRM 612&url=http://algorithms.powpark.com/articles/srm-612/&via=nonsens3" title="Share on Twitter" itemprop="Twitter"><i class="icon-twitter-sign"></i> Tweet</a></span>
+            <a href="https://twitter.com/intent/tweet?hashtags=articles&text=SRM 617&url=http://algorithms.powpark.com/articles/srm-617/&via=nonsens3" title="Share on Twitter" itemprop="Twitter"><i class="icon-twitter-sign"></i> Tweet</a></span>
         <span class="social-share-googleplus">
-            <a href="https://plus.google.com/share?url=http://algorithms.powpark.com/articles/srm-612/" title="Share on Google Plus" itemprop="GooglePlus"><i class="icon-google-plus-sign"></i> +1</a></span>
+            <a href="https://plus.google.com/share?url=http://algorithms.powpark.com/articles/srm-617/" title="Share on Google Plus" itemprop="GooglePlus"><i class="icon-google-plus-sign"></i> +1</a></span>
             <!-- /.social-share -->
       </footer>
       <div class="entry-content">
-        <p>Problem name: <a href="http://community.topcoder.com/stat?c=problem_statement&amp;pm=10543">EmoticonsDiv1</a></p>
+        <p>Problem name: <a href="http://community.topcoder.com/stat?c=problem_statement&amp;pm=13137">MyLongCake</a></p>
 
 <p>Points: 75 (250)</p>
 
-<p>Notes:</p>
-
-<p>Problem could be represented as a graph, with edge weights 1 and vertices <code>(smiles, clipboard)</code> as different states. Then it becomes a problem of finding the shortest path from <code>(1, 0)</code> to vertice <code>(smiles, X)</code>. Since each edge has a weight of 1, this can be done with BFS.</p>
-
 <hr />
 
-<div class="highlight"><pre><code class="cpp"><span class="k">class</span> <span class="nc">EmoticonsDiv1</span>
+<div class="highlight"><pre><code class="cpp"><span class="k">class</span> <span class="nc">MyLongCake</span>
 <span class="p">{</span>
-  <span class="nl">private:</span>
-    <span class="n">map</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">distance</span><span class="p">;</span>
-    <span class="n">queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">q</span><span class="p">;</span>
+<span class="nl">public:</span>
+  <span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">proper_divisors</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">result</span><span class="p">;</span>
 
-  <span class="nl">public:</span>
-    <span class="kt">void</span> <span class="nf">check_neighbour</span><span class="p">(</span><span class="kt">int</span> <span class="n">s</span><span class="p">,</span> <span class="kt">int</span> <span class="n">c</span><span class="p">,</span> <span class="kt">int</span> <span class="n">d</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
     <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">s</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">result</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="kt">int</span> <span class="n">cut</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">cuts</span><span class="p">;</span>
+
+    <span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">number_of_friends</span> <span class="o">=</span> <span class="n">proper_divisors</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;::</span><span class="n">iterator</span> <span class="n">it</span> <span class="o">=</span> <span class="n">number_of_friends</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span> <span class="n">it</span> <span class="o">!=</span> <span class="n">number_of_friends</span><span class="p">.</span><span class="n">end</span><span class="p">();</span> <span class="n">it</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">current_number_of_friends</span> <span class="o">=</span> <span class="o">*</span><span class="n">it</span><span class="p">;</span>
+
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">n</span><span class="o">/</span><span class="n">current_number_of_friends</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">+=</span><span class="n">n</span><span class="o">/</span><span class="n">current_number_of_friends</span><span class="p">)</span>
       <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">distance</span><span class="p">[</span><span class="n">make_pair</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">c</span><span class="p">)])</span>
-        <span class="p">{</span>
-          <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">c</span><span class="p">));</span>
-          <span class="n">distance</span><span class="p">[</span><span class="n">make_pair</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">c</span><span class="p">)]</span> <span class="o">=</span> <span class="n">d</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="p">}</span>
+        <span class="n">cuts</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
       <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="kt">int</span> <span class="nf">printSmiles</span><span class="p">(</span><span class="kt">int</span> <span class="n">smiles</span><span class="p">)</span>
-    <span class="p">{</span>
-      <span class="c1">// initial state</span>
-      <span class="n">distance</span><span class="p">[</span><span class="n">make_pair</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
-
-      <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span>
-      <span class="p">{</span>
-        <span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">current</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
-        <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-
-        <span class="kt">int</span> <span class="n">d</span> <span class="o">=</span> <span class="n">distance</span><span class="p">[</span><span class="n">current</span><span class="p">];</span>
-        <span class="kt">int</span> <span class="n">s</span> <span class="o">=</span> <span class="n">current</span><span class="p">.</span><span class="n">first</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">current</span><span class="p">.</span><span class="n">second</span><span class="p">;</span>
-
-        <span class="c1">// check if we have reached the goal</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="n">smiles</span><span class="p">)</span>
-        <span class="p">{</span>
-          <span class="k">return</span> <span class="n">d</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="k">else</span>
-        <span class="p">{</span>
-          <span class="c1">// check all neighbours unless they have been visited</span>
-          <span class="n">check_neighbour</span><span class="p">(</span><span class="n">s</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">);</span>
-          <span class="n">check_neighbour</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">d</span><span class="p">);</span>
-          <span class="n">check_neighbour</span><span class="p">(</span><span class="n">s</span><span class="o">+</span><span class="n">c</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">);</span>
-        <span class="p">}</span>
-      <span class="p">}</span>
-
-      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">cuts</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span>
 <span class="p">};</span>
 </code></pre></div>
 
@@ -206,10 +186,8 @@
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="http://algorithms.powpark.com/articles/srm-616/" class="btn" title="SRM 616">Previous article</a>
+        <a href="http://algorithms.powpark.com/articles/srm-612/" class="btn" title="SRM 612">Previous article</a>
       
-      
-        <a href="http://algorithms.powpark.com/articles/srm-617/" class="btn" title="SRM 617">Next article</a>
       
     </nav><!-- /.pagination -->
   </article>

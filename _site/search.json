@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "SRM 617",
+		  "category"   : "articles",
+		  "url"        : "http://algorithms.powpark.com/articles/srm-617/",
+		  "date"       : "2014-04-23 00:00:00 +0200",
+		  "shortdate"  : "April 23, 2014"
+		} ,
+	
+		{
 		  "title"      : "SRM 612",
 		  "category"   : "articles",
 		  "url"        : "http://algorithms.powpark.com/articles/srm-612/",
